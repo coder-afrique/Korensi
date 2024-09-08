@@ -1,0 +1,121 @@
+/* Tailwind directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+@layer base {
+  :root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    color-scheme: light dark;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply m-0 p-0 min-w-[320px] min-h-screen w-full;
+  }
+
+  h1 {
+    @apply text-[3.2em] leading-[1.1];
+  }
+
+  a {
+    @apply font-medium text-[#646cff] no-underline;
+  }
+
+  a:hover {
+    @apply text-[#535bf2];
+  }
+
+  button {
+    @apply rounded-lg border border-transparent px-6 py-3 text-base font-medium bg-[#1a1a1a] cursor-pointer transition-[border-color] duration-300;
+  }
+
+  button:hover {
+    @apply border-[#646cff];
+  }
+
+  button:focus,
+  button:focus-visible {
+    @apply outline-none ring-4 ring-[#646cff];
+  }
+}
+
+@layer utilities {
+  .dark {
+    @apply text-[rgba(255,255,255,0.87)] bg-[#242424];
+  }
+
+  .light {
+    @apply text-[#213547] bg-white;
+  }
+
+  .light button {
+    @apply bg-[#f9f9f9];
+  }
+
+  .light a:hover {
+    @apply text-[#747bff];
+  }
+}
+
+/* Add these styles to your existing index.css file */
+
+.hero-section {
+  position: relative;
+  padding: 4rem 2rem;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-image {
+  flex: 1;
+}
+
+.gif-placeholder {
+  background-color: #f0f0f0;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.illustration {
+  position: absolute;
+  background-color: #e0e0e0;
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.illustration-1 {
+  top: 10%;
+  left: 10%;
+}
+
+.illustration-2 {
+  bottom: 20%;
+  left: 5%;
+}
+
+.illustration-3 {
+  top: 15%;
+  right: 10%;
+}
+
+/* Add this to set the background color */
+body, #root {
+  background-color: #FFFFFF;
+}
