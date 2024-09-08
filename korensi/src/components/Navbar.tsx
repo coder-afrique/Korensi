@@ -5,8 +5,8 @@ const Navbar: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <nav className="w-full bg-white border-b border-gray-200">
-      <div className="w-full px-4 sm:px-6 lg:px-8">
+    <nav className="w-full bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           {/* Korensi text */}
           <div className="flex-shrink-0 flex items-center">
