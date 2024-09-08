@@ -1,25 +1,10 @@
-import express, { Router, Request, Response } from 'express';
-import User from '../models/User';
+import express from 'express';
+import { authMiddleware } from '../middleware/auth';
 
-const router: Router = express.Router();
+const router = express.Router();
 
-router.get('/', async (req: Request, res: Response) => {
-  try {
-    const users = await User.find();
-    res.json(users);
-  } catch (error) {
-    res.status(500).json({ message: 'Error fetching users' });
-  }
-});
-
-router.post('/', async (req: Request, res: Response) => {
-  try {
-    const newUser = new User(req.body);
-    await newUser.save();
-    res.status(201).json(newUser);
-  } catch (error) {
-    res.status(400).json({ message: 'Error creating user' });
-  }
+router.get('/', authMiddleware, (req, res) => {
+  res.json({ message: 'Protected users route' });
 });
 
 export default router;
