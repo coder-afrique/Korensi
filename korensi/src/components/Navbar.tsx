@@ -10,18 +10,22 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between h-16">
           {/* Korensi text */}
           <div className="flex-shrink-0 flex items-center">
-            <span className="text-xl font-semibold text-gray-900">Korensi.</span>
+            <span className="text-4xl font-bold">
+              <span className="text-[#062638]">Koren</span>
+              <span className="text-[#21BF44]">si.</span>
+            </span>
           </div>
           
-          {/* Get Started text */}
+          {/* Get Started button */}
           <div className="hidden sm:flex sm:items-center">
-            <span className="text-gray-500 text-sm">Get started</span>
+            <span className="text-[#21BF44] text-[15px] font-semibold px-4 py-2 rounded-full border border-[#21BF44] bg-[#21BF44]/15">
+              Get started
+            </span>
           </div>
           
-          {/* FAQs and Contact Us */}
-          <div className="hidden sm:flex sm:items-center sm:space-x-4">
-            <a href="#" className="text-gray-500 hover:text-gray-700 text-sm font-medium">FAQs</a>
-            <a href="#" className="text-gray-500 hover:text-gray-700 text-sm font-medium">Contact Us</a>
+          {/* Contact Us */}
+          <div className="hidden sm:flex sm:items-center">
+            <a href="#" className="text-[#21BF44] hover:text-[#21BF44]/80 text-sm font-medium">Contact Us</a>
           </div>
 
           {/* Mobile menu button */}
@@ -45,9 +49,10 @@ const Navbar: React.FC = () => {
       {isMobileMenuOpen && (
         <div className="sm:hidden">
           <div className="pt-2 pb-3 space-y-1">
-            <span className="block pl-3 pr-4 py-2 text-base text-gray-500">Get started</span>
-            <a href="#" className="block pl-3 pr-4 py-2 text-base font-medium text-gray-500 hover:bg-gray-50 hover:text-gray-700">FAQs</a>
-            <a href="#" className="block pl-3 pr-4 py-2 text-base font-medium text-gray-500 hover:bg-gray-50 hover:text-gray-700">Contact Us</a>
+            <span className="block mx-3 text-[15px] font-semibold text-[#21BF44] px-4 py-2 rounded-full border border-[#21BF44] bg-[#21BF44]/15">
+              Get started
+            </span>
+            <a href="#" className="block pl-3 pr-4 py-2 text-base font-medium text-[#21BF44] hover:bg-gray-50 hover:text-[#21BF44]/80">Contact Us</a>
           </div>
         </div>
       )}

@@ -7,21 +7,20 @@ const HeroSection: React.FC = () => {
         <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
           <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
             <div className="sm:text-center lg:text-left">
-              <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+              <h1 className="text-[45px] tracking-tight font-bold text-[#020202] sm:text-5xl md:text-6xl">
                 <span className="block xl:inline">Move Money Across Borders</span>{' '}
-                <span className="block text-indigo-600 xl:inline">Swiftly With Korensi 🚀</span>
+                <span className="block xl:inline">Swiftly With <span className="text-[#21BF44]">Korensi</span> 🚀</span>
               </h1>
-              <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+              <p className="mt-3 text-[20px] font-semibold text-[#02020280] sm:mt-5 sm:max-w-xl sm:mx-auto md:mt-5 lg:mx-0">
                 Transfer USD to Naira in Seconds
               </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div>
-                  <a
-                    href="#"
-                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium text-[#ffffff] bg-[#4DCC69] hover:bg-[#45b85f] shadow-[0_2px_30%_rgba(0,0,0,0.1)] transition-all duration-200 ease-in-out md:py-4 md:text-lg md:px-10"
+                  <span
+                    className="inline-block w-full px-8 py-3 text-base font-medium text-[#ffffff] bg-[#4DCC69] shadow-[0_2px_30%_rgba(0,0,0,0.1)] md:py-4 md:text-lg md:px-10"
                   >
                     Get started
-                  </a>
+                  </span>
                 </div>
               </div>
             </div>
