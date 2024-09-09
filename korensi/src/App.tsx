@@ -1,5 +1,6 @@
 import Navbar from './components/Navbar'
 import HeroSection from './components/HeroSection'
+import FooterSection from './components/FooterSection'
 
 function App() {
   return (
@@ -7,7 +8,9 @@ function App() {
       <Navbar />
       <main className="flex-grow">
         <HeroSection />
+        {/* Add other main content components here */}
       </main>
+      <FooterSection />
     </div>
   )
 }

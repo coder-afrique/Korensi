@@ -25,10 +25,18 @@ const HeroSection: React.FC = () => {
               </div>
             </div>
           </main>
+          
+          {/* Illustration */}
+          <div className="absolute bottom-0 right-0 w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20">
+            <img
+              src="/Burst-Bloat.png"
+              alt="Burst-Bloat Illustration"
+              className="w-full h-full object-contain"
+            />
+          </div>
         </div>
       </div>
       
-      {/* GIF */}
       <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 flex items-center justify-center p-8">
         <img
           className="h-auto w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl object-cover"
